@@ -1,0 +1,62 @@
+
+body{
+  width: 950px;
+  height: 480px;
+  font-family: 'roboto', sans-serif;
+  font-family: sans-serif;
+  background:url('https://1office.vn/wp-content/uploads/2020/10/quan-ly-nhan-su-5-1024x502.jpg') ;
+  background-size: cover;
+}
+img {
+    width: 85%;
+    height: 85%;
+    margin: 0;
+    padding: 0;
+  }
+.form_dang_ky{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width:25%;
+ padding:6rem;
+ background: white;
+ box-sizing: border-box;
+ box-shadow: 0 15px 25px white;
+ border-radius: 10px;
+}
+.form_dang_ky h2{
+    margin: 0 0 4rem;
+    padding: 5;
+    color: black;
+
+}
+.form_dang_ky .o_ky {
+    position: relative;
+}
+.form_dang_ky .o_ky input{
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+    color : blue;
+    margin-bottom:2rem;
+    border:none;
+    border-bottom:1px solid blue;
+    outline: none;
+    background: transparent;
+}
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+
+
+
+ 
