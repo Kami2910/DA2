@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $servername = "localhost";
 $database = "quanliduan";
 $username = "root";
@@ -11,7 +11,7 @@ if(isset($_POST['btn-DN']))
 
 	if($_POST['username'] == null || $_POST['password'] == null)
 	{
-		echo "<script> alert ('Vui lòng nhập tài khoản và mật khẩu của bạn') </script>";
+		echo "<script> alert ('Vui lòng hay nhập tài khoản và mật khẩu của bạn') </script>";
 	}
 	else
 	{
