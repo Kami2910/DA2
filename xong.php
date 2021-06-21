@@ -1,0 +1,26 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "quanliduan";
+$conn = new mysqli($servername, $username, $password, $dbname);
+    $getDA = $_GET['id'];
+    $getCV = $_GET['cv'];
+    $mattcn = $_GET['mattcn'];
+    $query = $conn->query("SELECT PC_TrangThai FROM phancong WHERE PC_MaDuAn = '$getDA' AND PC_MaTTCN = '$mattcn' AND PC_MaCongViec = '$getCV'");
+    $rw = $query->fetch_assoc();
+    $Trangthai =  $rw['PC_TrangThai'];
+    if($Trangthai == 'Chua hoan tat')
+    {
+        $conn->QUERY("UPDATE phancong SET PC_TrangThai = 'Đang chờ duyệt' WHERE PC_MaDuAn = '$getDA' AND PC_MaTTCN = '$mattcn' AND PC_MaCongViec = '$getCV'");
+        echo "<script> alert('Cập nhật công việc thành công ')</script>";
+        echo "<script>
+            location.href = './first.php';
+          </script>";
+    }
+    else {
+        echo "<script> alert('Cập nhật công việc thất bại')</script>";
+        echo "<script>
+            location.href = './first.php';
+          </script>";
+    }

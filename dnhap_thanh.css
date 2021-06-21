@@ -17,7 +17,7 @@ body {
 	
 }
 
-#form-1 {
+ #form-1 {
 	border-radius: 10px;	
 	height: 450px;
 	width: 380px;
@@ -25,7 +25,7 @@ body {
 	margin-right: auto;
 	margin-top: 170px;
 	background: #fff;
-}
+} 
 
 .heading {
 	
@@ -48,14 +48,14 @@ img {
 	padding: 3px auto 3px auto;
 }
 
-input[type=submit] {
+ input[type=submit] {
 	padding: 3px 5px;
 	display: block;
 	margin: 20px auto 20px auto;
 	width: 295px;
 	height: 40px;
 	background: #98c9f9;
-}
+} 
 
 .form-message {
 	color: red;
@@ -71,7 +71,7 @@ input[type=submit] {
 	text-align:center;
 	 width: 100%;
 	 margin-bottom: 10px;
-}
+} 
 
 .icon {
 	 padding: 15px;
@@ -79,14 +79,18 @@ input[type=submit] {
 	 width: 70px;
 	 text-align: left;
 }
+.eye {
+position: absolute;
+margin: 10px;
+}
 
-.input-field {
+ .input-field {
 	 width: 70%;
 	 padding: 10px;
 	 text-align: center;
 	 font-size: 15px;
 	 font-weight: 500;
-}
+} 
 
 .sign {
 	text-align: left;
